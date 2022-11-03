@@ -23,16 +23,16 @@ def load_descriptors():
         dataset = []
         labels = []
 
-        for row in reader:
+        for line in reader:
             hu_moments = []
-            for moment in row[1:len(row)]:
+            for moment in line[1:len(line)]:
                 hu_moments.append(float(moment))
             dataset.append(np.array(hu_moments, dtype=np.float32))
-            labels.append(np.array([float(row[0])], dtype=np.int32))
+            labels.append(np.array([float(line[0])], dtype=np.int32))
 
-        # for row in reader:
-        #     labels.append(get_label_id(row[0]))
-        #     dataset.append(row[1:len(row)])
+        # for line in reader:
+        #     labels.append(get_label_id(line[0]))
+        #     dataset.append(line[1:len(line)])
 
         return labels, dataset
 

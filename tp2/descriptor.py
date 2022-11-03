@@ -36,9 +36,9 @@ def main():
 def get_label(label_id):
     with open(r'' + constants.LABELS_FILE_NAME, 'r') as file_to_read:
         reader = csv.reader(file_to_read, delimiter=',')
-        for row in reader:
-            if int(row[0]) == label_id:
-                return row[1]
+        for line in reader:
+            if int(line[0]) == label_id:
+                return line[1]
 
 
 def load_files():
