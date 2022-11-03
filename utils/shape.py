@@ -1,5 +1,6 @@
-import cv2
+import numpy as np
 
+from tp2.descriptor import get_label
 from utils.contours import *
 
 
@@ -29,6 +30,15 @@ class Shape:
             self.match = True
             self.name = shape_to_compare.name
         return self.match
+
+    def predict(self, classifier):
+        hu_moments = get_hu_moments(self.contour)
+        hu_moments = hu_moments.flatten()
+
+        label_id = classifier.predict(np.array([hu_moments], dtype=np.float32))
+
+        self.name = get_label(label_id)
+        self.match = True
 
 
 def create_shape_from_image(name, path):

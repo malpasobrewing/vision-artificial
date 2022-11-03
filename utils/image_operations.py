@@ -1,4 +1,3 @@
-import cv2
 from utils.trackbar import *
 
 threshold_max_value = 151

@@ -1,7 +1,5 @@
-import csv
-import cv2
-import numpy
 import glob
+from math import copysign, log10
 
 from utils import colors
 from utils.image_operations import *
@@ -41,7 +39,6 @@ def draw_contours(frame, contours, color, thickness):
 
 
 def draw_contour_title(frame, contour, title):
-
     M = cv2.moments(contour)
     cX = int(M["m10"] / M["m00"])
     cY = int(M["m01"] / M["m00"])
@@ -62,6 +59,15 @@ def get_contours(frame, min_area):
 def get_biggest_contours(contours, amount, min_area):
     contours = filter(lambda x: (cv2.contourArea(x) >= min_area), contours)
     return sorted(contours, key=cv2.contourArea, reverse=True)[0:amount]
+
+
+def get_hu_moments(contour):
+    moments = cv2.moments(contour)
+    hu_moments = cv2.HuMoments(moments)
+    for i in range(len(hu_moments)):
+        if hu_moments[i] != 0:
+            hu_moments[i] = -1 * copysign(1.0, hu_moments[i]) * log10(abs(hu_moments[i]))
+    return hu_moments
 
 
 if __name__ == '__main__':
