@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c2d83a9-20d6-458e-826a-0880e706761d" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/tp3/grabcut.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp3/images/buttons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp3/watershed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/marker.py" afterDir="false" />
+    <list default="true" id="0c2d83a9-20d6-458e-826a-0880e706761d" name="Changes" comment="TP3">
+      <change afterPath="$PROJECT_DIR$/model/finger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/hand.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp4/hand.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp4/hand_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp4/hand_video2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp4/images/hand-right.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp1/form.detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/tp1/form.detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/colors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/image_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image_operations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/shape.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,17 +38,17 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/daniel/development/vision-artificial/tp3",
+    "last_opened_file_path": "/Users/daniel/development/vision-artificial/tp4",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tp4" />
       <recent name="$PROJECT_DIR$/tp3" />
       <recent name="$PROJECT_DIR$/tp1" />
       <recent name="$PROJECT_DIR$/tp2" />
       <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tp2/images" />
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667507167504</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TP3">
+      <created>1669142963353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669142963353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -254,6 +261,18 @@
     </ignored-roots>
     <MESSAGE value="Update on TP1&#10;Added TP2" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="TP3" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tp4/hand_video.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

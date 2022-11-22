@@ -12,7 +12,6 @@ def apply_color_convertion(frame, color):
 
 
 def apply_threshold(frame, threshold_value):
-
     if threshold_value is None:
         threshold_value = threshold_max_value
 
@@ -28,7 +27,6 @@ def apply_threshold(frame, threshold_value):
 
 
 def apply_noise(frame, noise_value):
-
     if noise_value is None:
         noise_value = noise_max_value
 
