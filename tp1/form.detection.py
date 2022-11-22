@@ -31,7 +31,7 @@ def main():
 
     if show_templates:
         for template in templates:
-            template.show('shapes-window', None)
+            template.show('shapes-window', None, True)
 
             if cv2.waitKey() & 0xFF:
                 continue

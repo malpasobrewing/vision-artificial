@@ -5,15 +5,21 @@ from utils.contours import *
 
 
 class Shape:
-    def __init__(self, name, contour):
+    def __init__(self, name, contour, frame):
         self.name = name
         self.contour = contour
+        self.frame = frame
         self.match = False
 
-    def show(self, window_name, frame):
+    def show(self, window_name, frame, draw_contour):
 
-        draw_contours(frame, self.contour, colors.BLUE, 3)
-        draw_contour_title(frame, self.contour, self.name)
+        if frame is None:
+            frame = self.frame
+
+        if draw_contour:
+            draw_contours(frame, self.contour, colors.BLUE, 3)
+            draw_contour_title(frame, self.contour, self.name)
+
         cv2.imshow(window_name, frame)
 
     def draw(self, frame):
@@ -47,14 +53,14 @@ def create_shape_from_image(name, path):
     threshold_frame = apply_threshold(gray_frame, None)
     noise_frame = apply_noise(threshold_frame, None)
 
-    return Shape(name, get_contours(noise_frame, None)[0])
+    return Shape(name, get_contours(noise_frame, None)[0], frame)
 
 
 def create_shapes_from_contours(contours):
     shapes = []
 
     for index, contour in enumerate(contours):
-        shape = Shape('Unknow: ' + str(index), contour)
+        shape = Shape('Unknow: ' + str(index), contour, None)
         shapes.append(shape)
 
     return shapes
