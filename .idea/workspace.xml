@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c2d83a9-20d6-458e-826a-0880e706761d" name="Changes" comment="TP3">
-      <change afterPath="$PROJECT_DIR$/model/finger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/hand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp4/hand.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp4/hand_video.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp4/hand_video2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tp4/images/hand-right.jpg" afterDir="false" />
+    <list default="true" id="0c2d83a9-20d6-458e-826a-0880e706761d" name="Changes" comment="TP4">
+      <change afterPath="$PROJECT_DIR$/final/HandsMotionTracking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/SoundPlayer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/a.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/b.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/c.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/d.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/e.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/f.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final/sounds/g.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Note.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Piano.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tp4/images/hands.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/finger.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Finger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/hand.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Hand.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/colors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/image_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/image_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp4/hand.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp4/hand_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tp4/hand_video2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tp4/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/final/HandsMotionTracking.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/final/SoundPlayer.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/final/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/model/Note.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/model/Piano.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,17 +55,17 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/daniel/development/vision-artificial/tp4",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "last_opened_file_path": "/Users/daniel/development/vision-artificial/model",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$/tp-final" />
       <recent name="$PROJECT_DIR$/tp4" />
       <recent name="$PROJECT_DIR$/tp3" />
       <recent name="$PROJECT_DIR$/tp1" />
-      <recent name="$PROJECT_DIR$/tp2" />
-      <recent name="$PROJECT_DIR$/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tp2/images" />
@@ -59,27 +76,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="descriptor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="vision-artificial" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tp2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tp2/descriptor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="form.detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="vision-artificial" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="vision-artificial" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tp-final" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tp1/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tp-final/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,6 +183,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.tp2.main" />
         <item itemvalue="Python.tp1.main" />
         <item itemvalue="Python.test" />
@@ -237,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669142963353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TP4">
+      <created>1669158612121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669158612121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -262,17 +266,7 @@
     <MESSAGE value="Update on TP1&#10;Added TP2" />
     <MESSAGE value="Update" />
     <MESSAGE value="TP3" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tp4/hand_video.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="TP4" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP4" />
   </component>
 </project>

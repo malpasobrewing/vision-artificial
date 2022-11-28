@@ -8,18 +8,20 @@ from utils.colors import *
 
 
 class Finger:
-    def __init__(self, id, name):
+    def __init__(self, id, name, hand_id):
         self.id = id
         self.name = name
+        self.hand_id = hand_id
+
         self.distance = 0
         self.TIP_X = None
         self.TIP_Y = None
         self.MCP_X = None
         self.MCP_Y = None
 
-        self.has_move = False
+        self.closed = False
 
-    def update(self, landmark, width, height):
+    def on_movement(self, landmark, width, height):
         if self.id == mp.solutions.hands.HandLandmark.THUMB_TIP:
             self.TIP_X = int(landmark[mp.solutions.hands.HandLandmark.THUMB_TIP].x * width)
             self.TIP_Y = int(landmark[mp.solutions.hands.HandLandmark.THUMB_TIP].y * height)
@@ -56,8 +58,19 @@ class Finger:
             self.distance = math.hypot(self.MCP_X - self.TIP_X, self.MCP_Y - self.TIP_Y)
 
         if self.distance > 0:
-            self.has_move = self.distance < 100
+            self.closed = self.distance < 100
 
+    def recognized(self):
+        return self.TIP_X is not None
+
+    def reset(self):
+        self.distance = 0
+        self.TIP_X = None
+        self.TIP_Y = None
+        self.MCP_X = None
+        self.MCP_Y = None
+
+        self.closed = False
 
     def draw(self, frame):
         if self.TIP_X is not None:
@@ -73,7 +86,7 @@ class Finger:
                        color=ImageColor.getcolor(COLORS[1], "RGB"),
                        thickness=5)
 
-        if self.has_move:
+        if self.closed:
             cv2.putText(frame,
                         text=self.__str__(),
                         org=(self.TIP_X - 20, self.TIP_Y - 20),
@@ -83,4 +96,4 @@ class Finger:
                         thickness=3)
 
     def __str__(self):
-        return self.name + ' ' + str(self.has_move)
+        return self.hand_id + ', ' + self.name + ' ' + str(self.closed)
